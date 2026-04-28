@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Tambah Data</h2>
+
+    <form method="POST">
+        <input type="text" name="nama" class="form-control mb-2" placeholder="Nama" required>
+
+        <input type="text" name="nim" class="form-control mb-2" placeholder="NIM" required>
+
+        <input type="text" name="jurusan" class="form-control mb-2" placeholder="Jurusan" required>
+
+        <button class="btn btn-primary">Simpan</button>
+        <a href="/" class="btn btn-secondary">Kembali</a>
+    </form>
+
+</div>
+
+</body>
+</html>

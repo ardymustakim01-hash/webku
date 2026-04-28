@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Edit Data</h2>
+
+    <form method="POST">
+        <input type="text" name="nama" value="{{ data[1] }}" class="form-control mb-2" required>
+
+        <input type="text" name="nim" value="{{ data[2] }}" class="form-control mb-2" required>
+
+        <input type="text" name="jurusan" value="{{ data[3] }}" class="form-control mb-2" required>
+
+        <button class="btn btn-primary">Update</button>
+        <a href="/" class="btn btn-secondary">Kembali</a>
+    </form>
+
+</div>
+
+</body>
+</html>
